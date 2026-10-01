@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twin Flame Calculator — Real Numerology &amp; Zodiac Score | Twin Flame Bond</title>
+<meta name="description" content="Free instant twin flame calculator. Enter two birth dates and get a real score: life paths, master numbers, zodiac elements and your shared bond number — every step shown.">
+<link rel="canonical" href="https://twinflame.bond/tools/twin-flame-calculator.html">
+<meta property="og:title" content="Twin Flame Calculator — Real Numerology &amp; Zodiac Score">
+<meta property="og:description" content="Two birth dates → one honest score. Life paths, master numbers, bond number and zodiac chemistry, with every engine result shown.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://twinflame.bond/tools/twin-flame-calculator.html">
+<meta property="og:image" content="https://twinflame.bond/og.jpg">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="%230F0B1E"/><path d="M50 14 C60 30 72 38 72 54 C72 68 62 78 50 78 C38 78 28 68 28 54 C28 38 40 30 50 14 Z" fill="%23F5B942"/><path d="M50 40 C54 48 58 51 58 58 C58 64 54 68 50 68 C46 68 42 64 42 58 C42 51 46 48 50 40 Z" fill="%23E85D3D"/></svg>'>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How does the twin flame calculator work?","acceptedAnswer":{"@type":"Answer","text":"It computes each person's life path number from their full birth date (preserving master numbers 11, 22 and 33), determines both sun signs and their elemental chemistry, then adds both life paths together into a bond number. The final score weights life path compatibility at 40%, zodiac compatibility at 35% and the bond number at 25% — and shows every intermediate result."}},
+{"@type":"Question","name":"What is a good twin flame score?","acceptedAnswer":{"@type":"Answer","text":"88–100 reads as a mirror-grade bond — the territory twin flame stories are written about. 72–87 is a strong twin flame signature, 55–71 is a growth (karmic teacher) bond, and below 55 reads as a catalyst connection: bright and educational rather than mirrored and enduring."}},
+{"@type":"Question","name":"Is my data stored or sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The calculator runs entirely in your browser — nothing is transmitted, saved or logged. Close the tab and it is gone."}},
+{"@type":"Question","name":"What are master numbers in the calculator?","acceptedAnswer":{"@type":"Answer","text":"11, 22 and 33 are the master numbers of numerology — higher-octave paths that are not reduced further. When one or both partners carry a master life path, or when your bond number reduces to a master, the calculator flags it: master energy in a connection is the classic 'old soul, feels fated' signature."}},
+{"@type":"Question","name":"Is numerology scientifically proven?","acceptedAnswer":{"@type":"Answer","text":"No — numerology and astrology are symbolic traditions, not sciences. We built this calculator to be rigorous within those traditions, and we say so plainly. Use the results as mirrors for reflection, not verdicts about a real person."}}
+]}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="/">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0F0B1E" stroke="rgba(255,255,255,.2)"/><path d="M50 14 C60 30 72 38 72 54 C72 68 62 78 50 78 C38 78 28 68 28 54 C28 38 40 30 50 14 Z" fill="#F5B942"/><path d="M50 40 C54 48 58 51 58 58 C58 64 54 68 50 68 C46 68 42 64 42 58 C42 51 46 48 50 40 Z" fill="#E85D3D"/></svg>
+      <span class="bname">Twin Flame <b>Bond</b></span>
+    </a>
+    <nav class="top">
+      <a href="../tools/twin-flame-calculator.html">Calculator</a>
+      <a href="../tools/angel-number-lookup.html">Angel Numbers</a>
+      <a href="../zodiac-compatibility.html">Compatibility</a>
+      <a href="../stages.html">Guides</a>
+      <a class="btn btn-gold btn-sm" href="../tools/twin-flame-test.html">Take the Test</a>
+    </nav>
+  </div>
+</header>
+
+<section style="padding-top:56px">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="kicker">Free · Instant · Runs in your browser</div>
+      <h1 style="font-size:clamp(34px,5vw,52px)">Twin Flame Calculator</h1>
+      <p>Enter both birth dates. Get a real score — life paths, master numbers, zodiac chemistry and your shared <b>bond number</b>, with every engine result shown.</p>
+    </div>
+
+    <div class="tool-box" style="max-width:760px;margin:0 auto">
+      <div class="tool-grid2">
+        <div class="field">
+          <label for="n1">Your name (optional)</label>
+          <input id="n1" type="text" placeholder="e.g. Sofia" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="n2">Their name (optional)</label>
+          <input id="n2" type="text" placeholder="e.g. Adam" autocomplete="off">
+        </div>
+      </div>
+      <div class="tool-grid2 mt">
+        <div class="field">
+          <label for="d1">Your birth date</label>
+          <input id="d1" type="date" required>
+        </div>
+        <div class="field">
+          <label for="d2">Their birth date</label>
+          <input id="d2" type="date" required>
+        </div>
+      </div>
+      <div class="center mt">
+        <button class="btn btn-gold" id="go" style="min-width:260px;font-size:17px">Calculate our bond 🔥</button>
+        <p class="note">Nothing is sent anywhere — the entire calculation happens on your device.</p>
+      </div>
+    </div>
+
+    <div id="result" class="hidden" style="max-width:760px;margin:26px auto 0"></div>
+
+    <div class="cta-band reveal" id="cta1" style="max-width:760px;margin:26px auto 0">
+      <div class="cb-ic">🎨</div>
+      <div style="flex:1;min-width:220px">
+        <h4>Want to see the face behind the bond?</h4>
+        <p>The viral soulmate sketch offer — a hand-drawn portrait &amp; reading by a psychic artist, delivered in 24–48 hours.</p>
+      </div>
+      <a class="btn btn-gold offer-cta" href="#">See the sketch →</a>
+    </div>
+    <p class="sponsored-note center" style="max-width:760px;margin:10px auto 0">Sponsored · we may earn a commission — it never affects our scores.</p>
+  </div>
+</section>
+
+<!-- explainer -->
+<section class="faq" style="background:var(--bg2)">
+  <div class="narrow">
+    <div class="sec-head">
+      <div class="kicker">How it works</div>
+      <h2>Three engines, one honest score.</h2>
+    </div>
+    <div class="grid3 mb">
+      <div class="card"><span class="tag">40%</span><h3>Life Paths</h3><p>Each full birth date reduces to a life path (1–9, plus masters 11/22/33). We score the pair using classical numerology triads — independence, builders, heart-creatives — with bonuses for mirror paths and master numbers.</p></div>
+      <div class="card"><span class="tag">35%</span><h3>Zodiac Chemistry</h3><p>Both sun signs are computed from the dates, then scored by element (fire, earth, air, water), with special handling for same-sign mirrors and the six opposite-sign "axis pairs" — the mirrors twin flame lore loves.</p></div>
+      <div class="card"><span class="tag">25%</span><h3>The Bond Number</h3><p>Our signature: both life paths added and reduced into a single number for the connection itself — 1 through 9, or a master. The bond number describes the lesson the relationship exists to teach.</p></div>
+    </div>
+    <details class="reveal"><summary>How does the twin flame calculator work? <span class="chev">+</span></summary><div class="a">It computes each person's life path number from their full birth date (preserving master numbers 11, 22 and 33), determines both sun signs and their elemental chemistry, then adds both life paths together into a bond number. The final score weights life path compatibility at 40%, zodiac compatibility at 35% and the bond number at 25% — and shows every intermediate result.</div></details>
+    <details class="reveal"><summary>What is a good twin flame score? <span class="chev">+</span></summary><div class="a">88–100 reads as a mirror-grade bond — the territory twin flame stories are written about. 72–87 is a strong twin flame signature, 55–71 is a growth (karmic teacher) bond, and below 55 reads as a catalyst connection: bright and educational rather than mirrored and enduring.</div></details>
+    <details class="reveal"><summary>Is my data stored or sent anywhere? <span class="chev">+</span></summary><div class="a">No. The calculator runs entirely in your browser — nothing is transmitted, saved or logged. Close the tab and it is gone.</div></details>
+    <details class="reveal"><summary>What are master numbers in the calculator? <span class="chev">+</span></summary><div class="a">11, 22 and 33 are the master numbers of numerology — higher-octave paths that are not reduced further. When one or both partners carry a master life path, or when your bond number reduces to a master, the calculator flags it: master energy in a connection is the classic 'old soul, feels fated' signature.</div></details>
+    <details class="reveal"><summary>Is numerology scientifically proven? <span class="chev">+</span></summary><div class="a">No — numerology and astrology are symbolic traditions, not sciences. We built this calculator to be rigorous within those traditions, and we say so plainly. Use the results as mirrors for reflection, not verdicts about a real person.</div></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:12px">
+          <svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1A1233" stroke="rgba(255,255,255,.2)"/><path d="M50 14 C60 30 72 38 72 54 C72 68 62 78 50 78 C38 78 28 68 28 54 C28 38 40 30 50 14 Z" fill="#F5B942"/><path d="M50 40 C54 48 58 51 58 58 C58 64 54 68 50 68 C46 68 42 64 42 58 C42 51 46 48 50 40 Z" fill="#E85D3D"/></svg>
+          <span class="bname" style="font-size:16px">Twin Flame <b>Bond</b></span>
+        </a>
+        <p style="font-size:13px;color:var(--faint);margin-top:10px">Free spiritual tools built on real numerology and zodiac engines. Symbolic wisdom, honest math, zero sign-ups.</p>
+      </div>
+      <div><h4>Tools</h4><a href="../tools/twin-flame-calculator.html">Twin Flame Calculator</a><a href="../tools/angel-number-lookup.html">Angel Number Decoder</a><a href="../tools/twin-flame-test.html">Twin Flame Test</a><a href="../zodiac-compatibility.html">Zodiac Compatibility Matrix</a></div>
+      <div><h4>Guides</h4><a href="../stages.html">The 8 Twin Flame Stages</a><a href="../signs.html">21 Twin Flame Signs</a><a href="../separation.html">Separation &amp; Reunion</a><a href="../numbers/1111.html">Angel Number 1111</a></div>
+      <div><h4>More</h4><a href="../about.html">About</a><a href="../privacy.html">Privacy &amp; Disclosure</a><a href="../contact.html">Contact</a><a href="../sitemap.xml">Sitemap</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="yr">2026</span> Twin Flame Bond · twinflame.bond</span>
+      <span><a href="../privacy.html">Affiliate disclosure</a> · Numerology &amp; astrology are symbolic traditions, offered for reflection and entertainment.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/config.js"></script>
+<script src="../assets/app.js"></script>
+<script>
+(function(){
+  const $=id=>document.getElementById(id);
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);}
+  function parseDate(v){
+    if(!v) return null;
+    const p=v.split("-").map(Number);
+    if(p.length!==3||!p[0]||!p[1]||!p[2]||p[0]<1900||p[0]>2100) return null;
+    return [p[0],p[1],p[2]];
+  }
+  function ring(pct){
+    const C=2*Math.PI*64, off=C*(1-Math.max(0,Math.min(100,pct))/100);
+    return `<div class="score-ring"><svg width="158" height="158" viewBox="0 0 158 158">
+      <circle cx="79" cy="79" r="64" fill="none" stroke="rgba(255,255,255,.09)" stroke-width="12"/>
+      <circle cx="79" cy="79" r="64" fill="none" stroke="url(#rg)" stroke-width="12" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" style="transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)"/>
+      <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5B942"/><stop offset="1" stop-color="#E85D3D"/></linearGradient></defs>
+    </svg><div class="val"><b>${pct}</b><span>bond score</span></div></div>`;
+  }
+  $("go").addEventListener("click",()=>{
+    const a=parseDate($("d1").value), b=parseDate($("d2").value);
+    if(!a||!b){ tfToast("Please enter both birth dates ✓"); return; }
+    const r=twinFlameReading(a,b);
+    const n1=esc($("n1").value.trim())||"You", n2=esc($("n2").value.trim())||"Them";
+    const zA=ZODIAC[r.s1], zB=ZODIAC[r.s2];
+    const lpPct=Math.round(r.lpScore*10), zPct=Math.round(r.zScore*10), bPct=Math.round(r.bScore*10);
+    const html=`
+    <div class="result">
+      <div class="result-head">
+        ${ring(r.total)}
+        <div class="result-title serif">${r.tier}</div>
+        <div class="result-sub">${n1} &amp; ${n2} — ${n1}'s path ${r.lp1} · ${n2}'s path ${r.lp2} · bond number <b style="color:var(--gold)">${r.bond}</b></div>
+        <div class="chiprow" style="justify-content:center">
+          <span class="chip">☉ ${zA.n} <b>${zA.e}</b></span>
+          <span class="chip">☉ ${zB.n} <b>${zB.e}</b></span>
+          <span class="chip">${Zod.tag(r.s1,r.s2)}</span>
+          <span class="chip">Life paths: <b>${LP.label(r.lp1,r.lp2)}</b></span>
+        </div>
+      </div>
+      <div class="rbreak">
+        <div class="rb"><div class="rl">Life paths ${r.lp1} + ${r.lp2}</div><div class="rv">${r.lpScore}/10</div><div class="rbar"><i style="width:${lpPct}%"></i></div></div>
+        <div class="rb"><div class="rl">Zodiac ${zA.n} + ${zB.n}</div><div class="rv">${r.zScore}/10</div><div class="rbar"><i style="width:${zPct}%"></i></div></div>
+        <div class="rb"><div class="rl">Bond number ${r.bond}</div><div class="rv">${r.bScore}/10</div><div class="rbar"><i style="width:${bPct}%"></i></div></div>
+      </div>
+      <div class="rtext">
+        <p>${r.text}</p>
+        <h4>The life path story</h4>
+        <p>${LP.story(r.lp1,r.lp2)}</p>
+        <h4>Your bond number: <span class="hl">${r.bond}${Num.isMaster(r.bond)?" (master)":""}</span></h4>
+        <p>${BOND.meaning(r.bond)}</p>
+        <h4>The zodiac layer</h4>
+        <p>${zA.n} (${zA.e}, ${zA.m}) and ${zB.n} (${zB.e}, ${zB.m}): ${Zod.tag(r.s1,r.s2)}. ${Zod.axis(r.s1,r.s2)?"Opposite-sign pairs sit on the same axis — the classical mirror axis of twin flame astrology: two ends of one theme, magnetized.":"Same-element and compatible-element pairs speak a natural dialect; friction pairs (steam, forge, dust) convert friction into growth when both stay humble."}</p>
+      </div>
+    </div>`;
+    const box=$("result");
+    box.innerHTML=html; box.classList.remove("hidden");
+    setTimeout(()=>box.scrollIntoView({behavior:"smooth",block:"start"}),80);
+  });
+})();
+</script>
+</body>
+</html>

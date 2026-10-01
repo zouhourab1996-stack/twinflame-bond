@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://twinflame.bond/sitemap.xml

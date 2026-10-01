@@ -1,0 +1,24 @@
+# Twin Flame Bond (twinflame.bond)
+
+Free twin flame and angel number tools built on real numerology and zodiac engines.
+All tools run client-side; no data is collected. Content is offered for reflection
+and entertainment; numerology/astrology are symbolic traditions.
+
+## Tools
+- /tools/twin-flame-calculator.html — Twin Flame Calculator: life paths, master numbers, bond number, zodiac chemistry, weighted score
+- /tools/angel-number-lookup.html — Angel Number Decoder: 40+ sequences with meaning, twin-flame layer, action step
+- /tools/twin-flame-test.html — 20-question stage test: recognition, testing, crisis, runner-chaser, surrender, union
+- /zodiac-compatibility.html — Interactive 144-pairing zodiac compatibility matrix
+
+## Guides
+- /stages.html — The 8 stages of a twin flame journey
+- /signs.html — 21 real twin flame signs (+ counterfeits)
+- /separation.html — Twin flame separation and reunion
+
+## Angel number library
+- /numbers/1111.html, /numbers/111.html, /numbers/222.html, /numbers/333.html, /numbers/444.html, /numbers/555.html, /numbers/777.html, /numbers/888.html, /numbers/999.html, /numbers/1212.html
+
+## Site
+- /about.html — methodology and funding
+- /privacy.html — privacy, advertising and affiliate disclosure
+- /recommendations/soulmate-sketch.html — sponsored recommendation (affiliate)
