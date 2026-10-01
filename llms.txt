@@ -6,19 +6,26 @@ and entertainment; numerology/astrology are symbolic traditions.
 
 ## Tools
 - /tools/twin-flame-calculator.html — Twin Flame Calculator: life paths, master numbers, bond number, zodiac chemistry, weighted score
-- /tools/angel-number-lookup.html — Angel Number Decoder: 40+ sequences with meaning, twin-flame layer, action step
+- /tools/angel-number-lookup.html — Angel Number Decoder: 45+ sequences with meaning, twin-flame layer, action step
 - /tools/twin-flame-test.html — 20-question stage test: recognition, testing, crisis, runner-chaser, surrender, union
-- /zodiac-compatibility.html — Interactive 144-pairing zodiac compatibility matrix
+- /zodiac-compatibility.html — Interactive 144-cell zodiac compatibility matrix + library of all 78 pairing pages (/compatibility/)
 
 ## Guides
 - /stages.html — The 8 stages of a twin flame journey
 - /signs.html — 21 real twin flame signs (+ counterfeits)
 - /separation.html — Twin flame separation and reunion
+- /twin-flame-vs-soulmate.html — twin flame vs soulmate vs karmic partner
+- /twin-flame-telepathy.html — signs, science, healthy deepening
+- /twin-flame-dreams.html — the 5 dream types
+- /twin-flame-birthdays.html — mirror numbers, age gaps, bond number
 
-## Angel number library
-- /numbers/1111.html, /numbers/111.html, /numbers/222.html, /numbers/333.html, /numbers/444.html, /numbers/555.html, /numbers/777.html, /numbers/888.html, /numbers/999.html, /numbers/1212.html
+## Angel number library (26 pages)
+- /numbers/ 1111, 000, 111, 222, 333, 444, 555, 666, 777, 888, 999, 1212, 1010, 1221, 1234, 1717, 1818, 1919, 2020, 2121, 2222, 3333, 4444, 5555, 7777, 0000
+
+## Compatibility library
+- /compatibility/{sign1}-{sign2}.html — all 78 unique zodiac pairings, each with element chemistry, strengths, watch-outs, growth line and FAQ
 
 ## Site
 - /about.html — methodology and funding
 - /privacy.html — privacy, advertising and affiliate disclosure
-- /recommendations/soulmate-sketch.html — sponsored recommendation (affiliate)
+- /recommendations/ — reviewed offers (affiliate): Soulmate Sketch, Draw My Twin Flame, Soulmate Reading, Soul Manifestation

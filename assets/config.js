@@ -7,15 +7,18 @@ var SITE_CONFIG = {
 
   /* ---- MONETIZATION -----------------------------------------------------
      clickbankAffiliate = your ClickBank account nickname.
-     As soon as it is set, EVERY "Soulmate Sketch" button on the whole site
-     points to your hoplink automatically (with tracking id "tfb").
-     Leave empty ("") and buttons fall back to the product's public page
-     (no commission) until you fill it in.
+     Offers are switched by data-offer="sketch|twin|reading|manifest" on
+     each a.offer-cta button (default: sketch). Every button site-wide is
+     rewritten to the matching hoplink with the tracking id below.
   ----------------------------------------------------------------------- */
   clickbankAffiliate: "heditouati",  // ClickBank nickname — all offer buttons use this hoplink
-  clickbankVendor:    "tinapsc",     // Soulmate Sketch by Tina (top ClickBank offer)
   clickbankTid:       "tfb",         // tracking id shown in ClickBank reports
-  clickbankFallback:  "https://www.soulmatesketch.com/",  // used while affiliate is empty
+  offers: {
+    sketch:   { vendor: "tinapsc",   label: "Soulmate Sketch",     fallback: "https://www.soulmatesketch.com/" },
+    twin:     { vendor: "drawmytf",  label: "Draw My Twin Flame",  fallback: "https://drawmytwinflame.com/" },
+    reading:  { vendor: "smreading", label: "Soulmate Reading",    fallback: "https://soulmate-reading.com/" },
+    manifest: { vendor: "soulmanif", label: "Soul Manifestation",  fallback: "https://www.soulmanifestation.net/" }
+  },
 
   /* ---- GOOGLE ANALYTICS (GA4) ---------------------------------------------
      Loaded automatically on every page. Ads stay off until enabled below.

@@ -153,18 +153,20 @@ function twinFlameReading(dob1, dob2){
 (function(){
   /* config reader — works with var-declared global or window property */
   function CFG(){ return (typeof SITE_CONFIG!=="undefined" && SITE_CONFIG) || window.SITE_CONFIG || null; }
-  /* offer links */
-  function offerUrl(){
+  /* offer links — one hoplink per product, switched by data-offer */
+  function offerUrl(offerName){
     const c=CFG(); if(!c) return "#";
+    const o=(c.offers&&(c.offers[offerName]||c.offers.sketch))||null;
+    if(!o) return "#";
     if(c.clickbankAffiliate){
       return "https://hop.clickbank.net/?affiliate="+encodeURIComponent(c.clickbankAffiliate)
-           + "&vendor="+encodeURIComponent(c.clickbankVendor)+"&tid="+encodeURIComponent(c.clickbankTid);
+           + "&vendor="+encodeURIComponent(o.vendor)+"&tid="+encodeURIComponent(c.clickbankTid);
     }
-    return c.clickbankFallback;
+    return o.fallback||"#";
   }
   function wireOffers(){
     document.querySelectorAll("a.offer-cta").forEach(a=>{
-      a.href=offerUrl(); a.target="_blank"; a.rel="sponsored nofollow noopener";
+      a.href=offerUrl(a.dataset.offer||"sketch"); a.target="_blank"; a.rel="sponsored nofollow noopener";
     });
   }
   /* AdSense loader (only when enabled in config) */
