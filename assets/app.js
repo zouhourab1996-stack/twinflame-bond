@@ -151,9 +151,11 @@ function twinFlameReading(dob1, dob2){
 
 /* ======================= SHARED UI WIRING ======================= */
 (function(){
+  /* config reader — works with var-declared global or window property */
+  function CFG(){ return (typeof SITE_CONFIG!=="undefined" && SITE_CONFIG) || window.SITE_CONFIG || null; }
   /* offer links */
   function offerUrl(){
-    const c=window.SITE_CONFIG; if(!c) return "#";
+    const c=CFG(); if(!c) return "#";
     if(c.clickbankAffiliate){
       return "https://hop.clickbank.net/?affiliate="+encodeURIComponent(c.clickbankAffiliate)
            + "&vendor="+encodeURIComponent(c.clickbankVendor)+"&tid="+encodeURIComponent(c.clickbankTid);
@@ -167,7 +169,7 @@ function twinFlameReading(dob1, dob2){
   }
   /* AdSense loader (only when enabled in config) */
   function adsense(){
-    const c=window.SITE_CONFIG; if(!c||!c.adsenseEnabled) return;
+    const c=CFG(); if(!c||!c.adsenseEnabled) return;
     const s=document.createElement("script");
     s.async=true; s.crossOrigin="anonymous";
     s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+c.adsenseClient;
@@ -199,5 +201,16 @@ function twinFlameReading(dob1, dob2){
     document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
   }
   function year(){ document.querySelectorAll(".yr").forEach(e=>e.textContent=new Date().getFullYear()); }
-  document.addEventListener("DOMContentLoaded",()=>{ wireOffers(); adsense(); wireCopy(); reveal(); year(); });
+  /* Google Analytics (GA4) — loaded only when gaMeasurementId is set */
+  function ga(){
+    const c=CFG(); if(!c||!c.gaMeasurementId) return;
+    const s=document.createElement("script");
+    s.async=true; s.src="https://www.googletagmanager.com/gtag/js?id="+c.gaMeasurementId;
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){ dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", c.gaMeasurementId);
+  }
+  document.addEventListener("DOMContentLoaded",()=>{ wireOffers(); adsense(); ga(); wireCopy(); reveal(); year(); });
 })();

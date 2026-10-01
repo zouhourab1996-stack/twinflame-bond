@@ -3,7 +3,7 @@
    The ONLY file you ever need to edit. Change a value, commit, done.
    ========================================================================== */
 
-const SITE_CONFIG = {
+var SITE_CONFIG = {
 
   /* ---- MONETIZATION -----------------------------------------------------
      clickbankAffiliate = your ClickBank account nickname.
@@ -12,10 +12,15 @@ const SITE_CONFIG = {
      Leave empty ("") and buttons fall back to the product's public page
      (no commission) until you fill it in.
   ----------------------------------------------------------------------- */
-  clickbankAffiliate: "",            // ← e.g. "mycbid"  (ClickBank nickname only)
+  clickbankAffiliate: "heditouati",  // ClickBank nickname — all offer buttons use this hoplink
   clickbankVendor:    "tinapsc",     // Soulmate Sketch by Tina (top ClickBank offer)
   clickbankTid:       "tfb",         // tracking id shown in ClickBank reports
   clickbankFallback:  "https://www.soulmatesketch.com/",  // used while affiliate is empty
+
+  /* ---- GOOGLE ANALYTICS (GA4) ---------------------------------------------
+     Loaded automatically on every page. Ads stay off until enabled below.
+  -------------------------------------------------------------------------- */
+  gaMeasurementId: "G-1W7PC1JDKH",
 
   /* ---- ADSENSE ----------------------------------------------------------
      Flip to true AFTER adding twinflame.bond in your AdSense console
@@ -27,5 +32,5 @@ const SITE_CONFIG = {
   /* ---- SITE ------------------------------------------------------------ */
   siteName:  "Twin Flame Bond",
   siteUrl:   "https://twinflame.bond",
-  contactEmail: "contact.twinflame@gmail.com"   // ← replace with your real email
+  contactEmail: "anistouati74@gmail.com"
 };
