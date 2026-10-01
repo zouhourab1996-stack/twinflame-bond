@@ -14,10 +14,16 @@ var SITE_CONFIG = {
   clickbankAffiliate: "heditouati",  // ClickBank nickname — all offer buttons use this hoplink
   clickbankTid:       "tfb",         // tracking id shown in ClickBank reports
   offers: {
-    sketch:   { vendor: "tinapsc",   label: "Soulmate Sketch",     fallback: "https://www.soulmatesketch.com/" },
-    twin:     { vendor: "drawmytf",  label: "Draw My Twin Flame",  fallback: "https://drawmytwinflame.com/" },
-    reading:  { vendor: "smreading", label: "Soulmate Reading",    fallback: "https://soulmate-reading.com/" },
-    manifest: { vendor: "soulmanif", label: "Soul Manifestation",  fallback: "https://www.soulmanifestation.net/" }
+    sketch:   { vendor: "tinapsc",    label: "Soulmate Sketch (Tina)",   fallback: "https://www.soulmatesketch.com/" },
+    twin:     { vendor: "drawmytf",   label: "Draw My Twin Flame",       fallback: "https://drawmytwinflame.com/" },
+    reading:  { vendor: "smreading",  label: "Soulmate Reading",         fallback: "https://soulmate-reading.com/" },
+    soulsk:   { vendor: "soulmatesk", label: "Soulmate Sketch (original)", fallback: "https://www.soulmatesketch.com/" },
+    numerology: { vendor: "numerology", label: "Numerologist",           fallback: "https://www.numerologist.com/" },
+    astro:    { vendor: "astrotv",    label: "Astrology.TV",             fallback: "https://astrology.tv/" },
+    bioenergy:{ vendor: "bienergyco", label: "The BioEnergy Code",       fallback: "https://bioenergycode.com/" },
+    wealth:   { vendor: "wealthdna",  label: "Wealth DNA Code",          fallback: "https://wealthdnacode.com/" },
+    archetype:{ vendor: "individua1", label: "Individualogist",          fallback: "https://individualogist.com/" },
+    manifest: { vendor: "soulmanif",  label: "Soul Manifestation",       fallback: "https://www.soulmanifestation.net/" }
   },
 
   /* ---- GOOGLE ANALYTICS (GA4) ---------------------------------------------

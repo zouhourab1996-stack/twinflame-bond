@@ -23,9 +23,21 @@ and entertainment; numerology/astrology are symbolic traditions.
 - /numbers/ 1111, 000, 111, 222, 333, 444, 555, 666, 777, 888, 999, 1212, 1010, 1221, 1234, 1717, 1818, 1919, 2020, 2121, 2222, 3333, 4444, 5555, 7777, 0000
 
 ## Compatibility library
-- /compatibility/{sign1}-{sign2}.html — all 78 unique zodiac pairings, each with element chemistry, strengths, watch-outs, growth line and FAQ
+- /compatibility/{sign1}-{sign2}.html — all 78 unique zodiac pairings
+
+## Recommendations (affiliate, all ClickBank, all honestly reviewed)
+- /recommendations/ — hub
+- /recommendations/soulmate-sketch.html — Soulmate Sketch by Tina
+- /recommendations/soulmate-sketch-original.html — the original soulmatesketch.com offer
+- /recommendations/draw-my-twin-flame.html — twin flame drawing
+- /recommendations/soulmate-reading.html — written soulmate reading
+- /recommendations/numerologist.html — video numerology readings
+- /recommendations/astrology-tv.html — video astrology readings
+- /recommendations/wealth-dna-code.html — wealth manifestation program
+- /recommendations/bioenergy-code.html — chakra audio course
+- /recommendations/individualogist.html — Jungian archetype readings
+- /recommendations/soul-manifestation.html — soul profile manifestation program
 
 ## Site
 - /about.html — methodology and funding
 - /privacy.html — privacy, advertising and affiliate disclosure
-- /recommendations/ — reviewed offers (affiliate): Soulmate Sketch, Draw My Twin Flame, Soulmate Reading, Soul Manifestation
