@@ -23,7 +23,11 @@ var SITE_CONFIG = {
     bioenergy:{ vendor: "bienergyco", label: "The BioEnergy Code",       fallback: "https://bioenergycode.com/" },
     wealth:   { vendor: "wealthdna",  label: "Wealth DNA Code",          fallback: "https://wealthdnacode.com/" },
     archetype:{ vendor: "individua1", label: "Individualogist",          fallback: "https://individualogist.com/" },
-    manifest: { vendor: "soulmanif",  label: "Soul Manifestation",       fallback: "https://www.soulmanifestation.net/" }
+    manifest: { vendor: "soulmanif",  label: "Soul Manifestation",       fallback: "https://www.soulmanifestation.net/" },
+    seraphina: { vendor: "SERAPHTARO", label: "Seraphina Tarot",          fallback: "https://reading.seraphinatarot.co/" },
+    mystery:   { vendor: "MYSTERY42",  label: "MysterySchool Code",       fallback: "https://mysteryschoolcode.com/" },
+    eastern:   { vendor: "ASTROLAN",   label: "Your Astrology Language",  fallback: "https://start.yourastrologylanguage.net/" },
+    lastwish:  { vendor: "UMAKEBREAD", label: "The Last Wish",            fallback: "https://messageofmanifestation.org/" }
   },
 
   /* ---- GOOGLE ANALYTICS (GA4) ---------------------------------------------
