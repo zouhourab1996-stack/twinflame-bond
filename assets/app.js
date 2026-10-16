@@ -160,7 +160,7 @@ function twinFlameReading(dob1, dob2){
     if(!o) return "#";
     if(c.clickbankAffiliate){
       return "https://hop.clickbank.net/?affiliate="+encodeURIComponent(c.clickbankAffiliate)
-           + "&vendor="+encodeURIComponent(o.vendor)+"&tid="+encodeURIComponent(c.clickbankTid);
+           + "&vendor="+encodeURIComponent(o.vendor)+"&tid="+encodeURIComponent(o.tid||c.clickbankTid);
     }
     return o.fallback||"#";
   }
