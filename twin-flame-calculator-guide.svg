@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Twin Flame Calculator Guide</title><desc id="d">Two luminous mirrored curves, a zodiac wheel and birth-date numerology symbols on a deep violet background.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#100b20"/><stop offset="1" stop-color="#35234e"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5d27a"/><stop offset="1" stop-color="#e85d3d"/></linearGradient></defs>
+<rect width="1200" height="630" rx="34" fill="url(#bg)"/>
+<circle cx="850" cy="300" r="205" fill="none" stroke="#f5b942" stroke-opacity=".45" stroke-width="3"/>
+<circle cx="850" cy="300" r="170" fill="none" stroke="#f5b942" stroke-opacity=".25" stroke-width="2" stroke-dasharray="5 13"/>
+<g stroke="#f5b942" stroke-opacity=".45" stroke-width="2"><path d="M850 95V505M645 300H1055M705 155L995 445M995 155L705 445"/></g>
+<path d="M850 112 C690 178 690 420 850 488 C1010 420 1010 178 850 112" fill="none" stroke="url(#gold)" stroke-width="20" stroke-linecap="round"/>
+<path d="M850 112 C1010 178 1010 420 850 488 C690 420 690 178 850 112" fill="none" stroke="#f7e7bd" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+<circle cx="850" cy="300" r="57" fill="#181127" stroke="#f5b942" stroke-width="4"/>
+<text x="850" y="313" fill="#fff0c9" font-family="Georgia,serif" font-size="42" text-anchor="middle">11</text>
+<g fill="#f5d27a" font-family="Arial,sans-serif" font-size="25" text-anchor="middle"><text x="850" y="78">♈</text><text x="1082" y="309">♎</text><text x="850" y="555">♑</text><text x="618" y="309">♋</text></g>
+<text x="100" y="185" fill="#fff2d6" font-family="Georgia,serif" font-size="55" font-weight="bold">Twin Flame</text>
+<text x="100" y="250" fill="#f5b942" font-family="Georgia,serif" font-size="55" font-weight="bold">Calculator</text>
+<text x="104" y="315" fill="#e7d9ef" font-family="Arial,sans-serif" font-size="25">Birth dates · Life paths · Zodiac</text>
+<text x="104" y="355" fill="#e7d9ef" font-family="Arial,sans-serif" font-size="25">A symbolic guide to the score</text>
+<text x="104" y="535" fill="#f5d27a" font-family="Arial,sans-serif" font-size="24">twinflame.bond</text>
+</svg>
