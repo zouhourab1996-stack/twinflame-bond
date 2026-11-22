@@ -239,5 +239,5 @@ hr.sep{border:none;border-top:1px solid var(--line);margin:44px 0}
 
 /* Replace the generic flame with the custom Twin Flame Bond double-flame emblem site-wide. */
 .brand>svg{display:none!important}
-.brand::before{content:"";display:inline-block;width:36px;height:36px;flex:0 0 36px;background:url('/logo.svg') center/contain no-repeat}
+.brand::before{content:"";display:inline-block;width:36px;height:36px;flex:0 0 36px;background:url('/logo.svg?v=20261122-brand') center/contain no-repeat}
 @media(max-width:520px){.brand::before{width:32px;height:32px;flex-basis:32px}}
