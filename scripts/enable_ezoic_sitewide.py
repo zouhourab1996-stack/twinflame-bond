@@ -51,7 +51,7 @@ for path in ROOT.rglob("*.html"):
     # Do not place ads on the privacy policy or 404 page.
     is_legal_or_error = path.name.lower() == "404.html" or path.name.lower() == "privacy.html"
     if not is_legal_or_error and "ezstandalone.showAds" not in content:
-        body_end = re.search(r"</body\\s*>", content, flags=re.I)
+        body_end = re.search(r"</body\s*>", content, flags=re.I)
         if body_end:
             content = content[:body_end.start()] + PLACEMENT + content[body_end.start():]
             placements_added += 1
