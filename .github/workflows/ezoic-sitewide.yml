@@ -1,5 +1,6 @@
 name: One-time Ezoic site-wide integration
-# This workflow performs the initial bulk pass only; generated HTML commits do not retrigger it.
+# One-time bulk pass; HTML-only commits do not retrigger this workflow.
+# The script also removes direct AdSense loaders so Ezoic controls ad delivery.
 
 on:
   push:
