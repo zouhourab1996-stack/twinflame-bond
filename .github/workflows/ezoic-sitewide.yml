@@ -1,4 +1,5 @@
 name: One-time Ezoic site-wide integration
+# This workflow performs the initial bulk pass only; generated HTML commits do not retrigger it.
 
 on:
   push:
