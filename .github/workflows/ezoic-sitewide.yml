@@ -1,0 +1,41 @@
+name: One-time Ezoic site-wide integration
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/ezoic-sitewide.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Add Ezoic scripts and simple placements to static pages
+        run: python3 scripts/enable_ezoic_sitewide.py
+
+      - name: Commit the site-wide integration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- '*.html'
+          if git diff --cached --quiet; then
+            echo "No HTML changes were needed."
+          else
+            git commit -m "Apply Ezoic JavaScript integration site-wide"
+            git push origin HEAD:main
+          fi
