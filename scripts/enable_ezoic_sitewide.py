@@ -41,7 +41,7 @@ for path in ROOT.rglob("*.html"):
 
     # Remove the direct AdSense loader so it does not compete with Ezoic.
     content, removed = re.subn(
-        r'<script\b[^>]*src="https?://pagead\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^"]*"[^>]*>\s*</script>\s*',
+        r'<script\b[^>]*src="https?://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^"]*"[^>]*>\s*</script>\s*',
         "",
         content,
         flags=re.I,
