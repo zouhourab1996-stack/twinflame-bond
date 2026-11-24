@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Ezoic privacy and header scripts: load consent before ad/analytics code. -->
+<script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+window.ezstandalone = window.ezstandalone || {};
+ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+
 <meta name="robots" content="noindex,follow">
 <meta name="google-adsense-account" content="ca-pub-3898992716389443"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3898992716389443" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
@@ -135,5 +145,11 @@
 
 <script src="../assets/config.js"></script>
 <script src="../assets/app.js"></script>
+<!-- Ezoic simple ad placement. Ezoic chooses the responsive size. -->
+<script>
+ezstandalone.cmd.push(function () {
+  ezstandalone.showAds({});
+});
+</script>
 </body>
 </html>
